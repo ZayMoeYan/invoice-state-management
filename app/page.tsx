@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
+import {redirect} from "next/navigation";
 
 export default function IndexPage() {
-  return <Counter />;
+  redirect('/invoices');
 }
 
-export const metadata: Metadata = {
-  title: "Redux Toolkit",
-};
+// export const metadata: Metadata = {
+//   title: "Redux Toolkit",
+// };
