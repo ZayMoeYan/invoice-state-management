@@ -1,6 +1,5 @@
 'use client';
 import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover";
-import {Button} from "@/components/ui/button";
 import {cn} from "@/lib/utils";
 import {CalendarIcon} from "lucide-react";
 import {format} from "date-fns";
@@ -86,15 +85,13 @@ export default function InvoiceInput() {
                         <label htmlFor="date">Date</label>
                         <Popover>
                             <PopoverTrigger asChild>
-                                <Button
-                                    variant={"outline"} className={cn(
-                                    "w-[240px] justify-start text-left font-normal",
-                                    !date && "text-muted-foreground"
-                                )}
+                                <button
+                                    type={'button'}
+                                    className={'px-3 cursor-pointer py-1 border w-60 flex items-center rounded'}
                                 >
-                                    <CalendarIcon/>
+                                    <CalendarIcon className={'me-3'}/>
                                     {date ? format(date, "dd/MM/yyyy") : <span>Pick a date</span>}
-                                </Button>
+                                </button>
                             </PopoverTrigger>
                             <PopoverContent className="w-auto p-0" align="start">
                                 <Calendar
