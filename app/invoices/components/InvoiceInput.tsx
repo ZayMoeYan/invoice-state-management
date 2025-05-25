@@ -123,7 +123,7 @@ export default function InvoiceInput() {
                         <span className={'text-red-600 text-sm h-5'} >{errors?.price && errors?.price?.message}</span>
                     </div>
                     <div>
-                        <button type={'submit'} className={'border px-3 py-1  rounded cursor-pointer'}>Add Item</button>
+                        <button type={'submit'} className={'border px-3 py-1 font-bold rounded cursor-pointer'}>Add Item</button>
                     </div>
                 </div>
                 <div className={'text-center'} >
@@ -150,7 +150,7 @@ export default function InvoiceInput() {
                     </Table>
                 }
                 <div className={'text-end mt-5'} >
-                    <button type={'button'} onClick={onSaveHandler} className={'px-3 py-1 border cursor-pointer'} >Save</button>
+                    <button type={'button'} onClick={onSaveHandler} className={'px-3 py-1 font-bold rounded border cursor-pointer'} >Save</button>
                 </div>
             </form>
         </div>

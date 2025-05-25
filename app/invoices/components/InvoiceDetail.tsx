@@ -74,7 +74,7 @@ export default function InvoiceDetail({ invoice }: Props ) {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <button type={"button"} className={"cursor-pointer border px-3 py-1"}>Details</button>
+                <button type={"button"} className={"cursor-pointer border font-bold rounded px-3 py-1"}>Details</button>
             </DialogTrigger>
             <DialogContent className={'w-200'}>
                 <DialogHeader className={'flex flex-row justify-between'} >
